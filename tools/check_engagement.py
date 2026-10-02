@@ -199,6 +199,25 @@ def _table_rows(seg_lines):
     return out[1:] if out else out          # 去掉第一行表头
 
 
+def _cell(row: str, idx: int) -> str:
+    """取某一列的内容（去掉两侧 | 后按 | 切分）。"""
+    parts = [p.strip() for p in row.strip().strip("|").split("|")]
+    return parts[idx] if 0 <= idx < len(parts) else ""
+
+
+def _is_real_reply(cell: str) -> bool:
+    """判断「回应原文」这一列是否为真实回应。
+
+    注意：不能用 `"无" in cell`——「没有」「无人」里都含"无"字，
+    会把「老师：你是不是没有在…填」这种真实回复误判成"无回应"。
+    正确判据：去掉格式符后，**以"无"开头**才算无回应。
+    """
+    txt = re.sub(r"[*`\s]", "", cell)
+    if not txt:
+        return False
+    return not txt.startswith(("无", "—", "-", "待填", "待回填"))
+
+
 def _section_rows(text, start_kw, end_kw=None):
     seg, on = [], False
     for ln in text.splitlines():
@@ -230,7 +249,12 @@ def check_tracking_table(path: str) -> dict:
     sent = [r for r in s1 if DATE_RE.search(r) and "未发出" not in r]
     unsent = [r for r in s1 if "未发出" in r]
     replied = [r for r in s2 if ("未发生" in r or DATE_RE.search(r))]
-    inbound = [r for r in s3 if "无" not in r]          # 含真实回应原文的行
+    inbound = [r for r in s3 if _is_real_reply(_cell(r, 3))]   # 第 4 列 = 回应原文
+    # ⚠️ 只看「回应人」列（第 3 列）判断渠道，不要扫整行——
+    # 否则"群内 @我 → 转私聊闭环"这种记录会被误判成私聊（正文里也出现了"私聊"二字）。
+    inbound_p2p = [r for r in inbound if ("私聊" in _cell(r, 2) or "p2p" in _cell(r, 2).lower())]
+    # 「群内」判据：不只看"有没有人回我"，还要看**是不是发生在群内**
+    inbound_in_group = [r for r in inbound if r not in inbound_p2p]
     zero_rounds = [r for r in s5 if r.count("|") >= 5]
 
     print("=" * 70)
@@ -241,6 +265,11 @@ def check_tracking_table(path: str) -> dict:
     print(f"  第二节 我回应别人的  ：已填写 {len(replied)} 行")
     print(f"  第三节 别人回应我的  ：{C_OK if inbound else C_BAD}{len(inbound)} 行有真实回应{C_END}"
           f"  {C_DIM}← 验收要点「被至少 1 位同学/教师回应」{C_END}")
+    if inbound_in_group:
+        print(f"  {C_OK}   └ 其中 {len(inbound_in_group)} 行发生在【群内】→ 验收要点满足{C_END}")
+    if inbound_p2p:
+        print(f"  {C_WARN}   └ 另 {len(inbound_p2p)} 行发生在【私聊】，不是【群内】"
+              f"——不要当成群内互动闭环{C_END}")
     print(f"  第五节 零回应记录    ：{len(zero_rounds)} 轮已留痕")
     print("-" * 70)
 
@@ -252,13 +281,16 @@ def check_tracking_table(path: str) -> dict:
     print(f"  {'[√]' if ok_sent else '[×]'} 第一节 ≥5 行有日期的记录")
     print(f"  {'[√]' if ok_reply else '[×]'} 第二节 ≥3 行（主动回应）")
     print(f"  {C_OK if ok_inbound else C_BAD}{'[√]' if ok_inbound else '[×]'} "
-          f"第三节 ≥1 行（被回应）——验收要点，没有就不算闭环{C_END}")
+          f"第三节 ≥1 行（被回应）——验收要点{C_END}")
     print(f"  {'[√]' if ok_zero else '[×]'} 第五节 如实记录零回应")
 
-    closed = ok_sent and ok_reply and ok_inbound
+    closed = ok_sent and ok_reply and ok_inbound and bool(inbound_in_group)
     print("-" * 70)
     if closed:
-        print(f"  {C_OK}✓ 参与闭环已形成{C_END}")
+        print(f"  {C_OK}✓ 参与闭环已形成，且【群内】被回应 {len(inbound_in_group)} 次{C_END}")
+    elif inbound and inbound_p2p:
+        print(f"  {C_WARN}⚠ 已有真实回应，但发生在【私聊】：可支撑 collaboration「帮助他人」，"
+              f"仍缺一次【群内】动作{C_END}")
     else:
         print(f"  {C_WARN}⚠ 未闭环：缺「被回应」记录。这一栏由他人决定，"
               f"如实标注为 0 即可，不要伪造。{C_END}")
