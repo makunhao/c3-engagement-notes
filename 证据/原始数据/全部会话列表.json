@@ -1,0 +1,139 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "chats": [
+      {
+        "chat_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_07c8d2108223878b2444dba85535db70",
+        "chat_id": "oc_07c8d2108223878b2444dba85535db70",
+        "chat_mode": "p2p",
+        "chat_status": "normal",
+        "external": false,
+        "name": "云文档助手",
+        "p2p_target_id": "ou_062a4cdd26934ac7aa052701636d4a64",
+        "p2p_target_type": "bot",
+        "tenant_key": "1ad49b5e041c5c84"
+      },
+      {
+        "avatar": "https://s3-imfile.feishucdn.com/static-resource/v1/default-avatar_v3_0074_65a6497b-3fdd-4f26-921a-debf1782f10g~?image_size=100x100\u0026cut_type=\u0026quality=\u0026format=jpeg\u0026sticker_format=.webp",
+        "chat_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_4f9dbc78e7b06a5e34a03c3646023e27",
+        "chat_id": "oc_4f9dbc78e7b06a5e34a03c3646023e27",
+        "chat_mode": "group",
+        "chat_status": "normal",
+        "description": "",
+        "external": true,
+        "name": "AI+X Elite Class 2",
+        "owner_id": "ou_432ba7c971566328490babd78f416300",
+        "owner_id_type": "open_id",
+        "tenant_key": "1ad49b5e041c5c84"
+      },
+      {
+        "chat_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_2dc7ecd56f399fbdcaed4d3c7013ae53",
+        "chat_id": "oc_2dc7ecd56f399fbdcaed4d3c7013ae53",
+        "chat_mode": "p2p",
+        "chat_status": "normal",
+        "external": false,
+        "name": "开发者小助手",
+        "p2p_target_id": "ou_742c10a2ed4266c0c2e43a9c4a962458",
+        "p2p_target_type": "bot",
+        "tenant_key": "1ad49b5e041c5c84"
+      },
+      {
+        "chat_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_b74ee77660c7233b51823809c49b3ea5",
+        "chat_id": "oc_b74ee77660c7233b51823809c49b3ea5",
+        "chat_mode": "p2p",
+        "chat_status": "normal",
+        "external": false,
+        "name": "苗文馨",
+        "owner_id": "ou_9fb51b973de25d97bf29d1205e606dcb",
+        "owner_id_type": "open_id",
+        "p2p_target_id": "ou_9fb51b973de25d97bf29d1205e606dcb",
+        "p2p_target_type": "user",
+        "tenant_key": "1ad49b5e041c5c84"
+      },
+      {
+        "chat_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_0a97f649d117d2c29e19eb7425735863",
+        "chat_id": "oc_0a97f649d117d2c29e19eb7425735863",
+        "chat_mode": "p2p",
+        "chat_status": "normal",
+        "external": false,
+        "name": "账号安全中心",
+        "owner_id": "ou_40276ffc1fc8371aa31aa8fdb22a5fbf",
+        "owner_id_type": "open_id",
+        "p2p_target_id": "ou_be12b5066bfe1f6f682fd5772c732f59",
+        "p2p_target_type": "bot",
+        "tenant_key": "1ad49b5e041c5c84"
+      },
+      {
+        "chat_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_7423048f8e49d1c052ddd88ac68a64ec",
+        "chat_id": "oc_7423048f8e49d1c052ddd88ac68a64ec",
+        "chat_mode": "p2p",
+        "chat_status": "normal",
+        "external": false,
+        "name": "李森澳",
+        "owner_id": "ou_8c913daf2fd161ad4ef4e952b36782e7",
+        "owner_id_type": "open_id",
+        "p2p_target_id": "ou_8c913daf2fd161ad4ef4e952b36782e7",
+        "p2p_target_type": "user",
+        "tenant_key": "1ad49b5e041c5c84"
+      },
+      {
+        "avatar": "https://s3-imfile.feishucdn.com/static-resource/v1/default-avatar_0cda3662-875a-4354-94d2-83e7393c7123~?image_size=100x100\u0026cut_type=\u0026quality=\u0026format=jpeg\u0026sticker_format=.webp",
+        "chat_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_328c794c324843c1bd61f36b65671e4a",
+        "chat_id": "oc_328c794c324843c1bd61f36b65671e4a",
+        "chat_mode": "group",
+        "chat_status": "normal",
+        "description": "",
+        "external": false,
+        "name": "二期师生全体成员",
+        "owner_id": "ou_9561f296d5f2a6812811a2e186fce8dd",
+        "owner_id_type": "open_id",
+        "tenant_key": "1ad49b5e041c5c84"
+      },
+      {
+        "chat_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_c2802c3a55991b18002d062d5e361bd6",
+        "chat_id": "oc_c2802c3a55991b18002d062d5e361bd6",
+        "chat_mode": "p2p",
+        "chat_status": "normal",
+        "external": false,
+        "name": "用户785691",
+        "owner_id": "ou_8320d10f21ad959e1451d834b610a8cc",
+        "owner_id_type": "open_id",
+        "p2p_target_id": "ou_8320d10f21ad959e1451d834b610a8cc",
+        "p2p_target_type": "user",
+        "tenant_key": "1ad49b5e041c5c84"
+      },
+      {
+        "chat_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_c46204c711371ae4be9c1ad21ddf3f63",
+        "chat_id": "oc_c46204c711371ae4be9c1ad21ddf3f63",
+        "chat_mode": "p2p",
+        "chat_status": "normal",
+        "external": false,
+        "name": "飞书智能助手",
+        "p2p_target_id": "ou_243452b21ba2a60f62c176bfe028e401",
+        "p2p_target_type": "bot",
+        "tenant_key": "1ad49b5e041c5c84"
+      },
+      {
+        "chat_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_694380b670ae088c169eb0be95c3928c",
+        "chat_id": "oc_694380b670ae088c169eb0be95c3928c",
+        "chat_mode": "p2p",
+        "chat_status": "normal",
+        "external": false,
+        "name": "飞行社",
+        "p2p_target_id": "ou_0a6f21757dde1399614d47c35a65b0cc",
+        "p2p_target_type": "bot",
+        "tenant_key": "1ad49b5e041c5c84"
+      }
+    ],
+    "has_more": false,
+    "page_token": ""
+  },
+  "meta": {
+    "pagination": {
+      "complete": true,
+      "pages": 1,
+      "items": 10
+    }
+  }
+}
