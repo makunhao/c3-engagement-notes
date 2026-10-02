@@ -1,0 +1,226 @@
+warning: reactions_partial_failed: 1 message(s) failed ([om_x100b659edb9bb8a4c247606abe302a4])
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "messages": [
+      {
+        "chat_id": "oc_4f9dbc78e7b06a5e34a03c3646023e27",
+        "content": "需要装到你们Mac mini上",
+        "create_time": "2026-09-16 19:18",
+        "deleted": false,
+        "message_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_4f9dbc78e7b06a5e34a03c3646023e27\u0026position=67",
+        "message_id": "om_x100b6593ff1d8ca4c2face4f6737cec",
+        "message_position": "67",
+        "msg_type": "text",
+        "sender": {
+          "id": "ou_432ba7c971566328490babd78f416300",
+          "id_type": "open_id",
+          "name": "张浩",
+          "sender_type": "user",
+          "tenant_key": "1ad49b5e041c5c84"
+        },
+        "updated": false
+      },
+      {
+        "chat_id": "oc_4f9dbc78e7b06a5e34a03c3646023e27",
+        "content": "[OK]谢谢老师",
+        "create_time": "2026-09-16 22:37",
+        "deleted": false,
+        "message_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_4f9dbc78e7b06a5e34a03c3646023e27\u0026position=76",
+        "message_id": "om_x100b659ed7cf10b4b30733eb6de0e0c",
+        "message_position": "76",
+        "msg_type": "text",
+        "sender": {
+          "id": "ou_40276ffc1fc8371aa31aa8fdb22a5fbf",
+          "id_type": "open_id",
+          "name": "马坤豪",
+          "sender_type": "user",
+          "tenant_key": "1ad49b5e041c5c84"
+        },
+        "updated": false
+      },
+      {
+        "chat_id": "oc_4f9dbc78e7b06a5e34a03c3646023e27",
+        "content": "@徐家乐 @苗文馨 @王春燕 @马坤豪 @阮依涵项目填报已经截止，你们尚未完成志愿填报，请尽快处理，有问题及时和我沟通。",
+        "create_time": "2026-09-20 08:28",
+        "deleted": false,
+        "message_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_4f9dbc78e7b06a5e34a03c3646023e27\u0026position=95",
+        "message_id": "om_x100b65c6c7a07cacc39b15823819056",
+        "message_position": "95",
+        "msg_type": "text",
+        "sender": {
+          "id": "ou_8320d10f21ad959e1451d834b610a8cc",
+          "id_type": "open_id",
+          "name": "用户785691",
+          "sender_i18n_names": {
+            "zh_cn": "赵梦韩"
+          },
+          "sender_type": "user",
+          "tenant_key": "1ad49b5e041c5c84"
+        },
+        "updated": false
+      },
+      {
+        "chat_id": "oc_4f9dbc78e7b06a5e34a03c3646023e27",
+        "content": "[Invalid text JSON]",
+        "create_time": "2026-09-16 22:36",
+        "deleted": true,
+        "message_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_4f9dbc78e7b06a5e34a03c3646023e27\u0026position=74",
+        "message_id": "om_x100b659edb9bb8a4c247606abe302a4",
+        "message_position": "74",
+        "msg_type": "text",
+        "reactions_error": true,
+        "sender": {
+          "id": "ou_3edf271e94234a53a5ddbbdeccdd723c",
+          "id_type": "open_id",
+          "name": "肖福军",
+          "sender_i18n_names": {
+            "zh_cn": "肖福君"
+          },
+          "sender_type": "user",
+          "tenant_key": "1ad49b5e041c5c84"
+        },
+        "updated": false
+      },
+      {
+        "chat_id": "oc_4f9dbc78e7b06a5e34a03c3646023e27",
+        "content": "这个项目必须要在mac上完成的话能把教室里的mac mini常开远程连接吗老师？",
+        "create_time": "2026-09-16 22:32",
+        "deleted": false,
+        "message_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_4f9dbc78e7b06a5e34a03c3646023e27\u0026position=73",
+        "message_id": "om_x100b659ec66ec4b8b1fb20c3b336060",
+        "message_position": "73",
+        "msg_type": "text",
+        "sender": {
+          "id": "ou_40276ffc1fc8371aa31aa8fdb22a5fbf",
+          "id_type": "open_id",
+          "name": "马坤豪",
+          "sender_type": "user",
+          "tenant_key": "1ad49b5e041c5c84"
+        },
+        "updated": false
+      },
+      {
+        "chat_id": "oc_4f9dbc78e7b06a5e34a03c3646023e27",
+        "content": "?",
+        "create_time": "2026-09-20 08:28",
+        "deleted": false,
+        "message_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_4f9dbc78e7b06a5e34a03c3646023e27\u0026position=96",
+        "message_id": "om_x100b65c6c43f7ca4dd45311b971db5b",
+        "message_position": "96",
+        "msg_type": "text",
+        "sender": {
+          "id": "ou_40276ffc1fc8371aa31aa8fdb22a5fbf",
+          "id_type": "open_id",
+          "name": "马坤豪",
+          "sender_type": "user",
+          "tenant_key": "1ad49b5e041c5c84"
+        },
+        "updated": false
+      },
+      {
+        "chat_id": "oc_4f9dbc78e7b06a5e34a03c3646023e27",
+        "content": "仅支持Mac系列的M系列芯片",
+        "create_time": "2026-09-16 19:19",
+        "deleted": false,
+        "message_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_4f9dbc78e7b06a5e34a03c3646023e27\u0026position=68",
+        "message_id": "om_x100b6593fde7e4a0c323f1e3ba7c483",
+        "message_position": "68",
+        "msg_type": "text",
+        "sender": {
+          "id": "ou_432ba7c971566328490babd78f416300",
+          "id_type": "open_id",
+          "name": "张浩",
+          "sender_type": "user",
+          "tenant_key": "1ad49b5e041c5c84"
+        },
+        "updated": false
+      },
+      {
+        "chat_id": "oc_4f9dbc78e7b06a5e34a03c3646023e27",
+        "content": "这个安装包是我今天会上演示的Cogseed安装包，",
+        "create_time": "2026-09-16 19:18",
+        "deleted": false,
+        "message_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_4f9dbc78e7b06a5e34a03c3646023e27\u0026position=66",
+        "message_id": "om_x100b6593ffb988b0c24b956f79bfe51",
+        "message_position": "66",
+        "msg_type": "text",
+        "sender": {
+          "id": "ou_432ba7c971566328490babd78f416300",
+          "id_type": "open_id",
+          "name": "张浩",
+          "sender_type": "user",
+          "tenant_key": "1ad49b5e041c5c84"
+        },
+        "updated": false
+      },
+      {
+        "chat_id": "oc_4f9dbc78e7b06a5e34a03c3646023e27",
+        "content": "这个文件是只兼容mac系统吗？",
+        "create_time": "2026-09-16 19:17",
+        "deleted": false,
+        "message_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_4f9dbc78e7b06a5e34a03c3646023e27\u0026position=64",
+        "message_id": "om_x100b6593e3bb10acc105fbd0f6e98e3",
+        "message_position": "64",
+        "msg_type": "text",
+        "sender": {
+          "id": "ou_40276ffc1fc8371aa31aa8fdb22a5fbf",
+          "id_type": "open_id",
+          "name": "马坤豪",
+          "sender_type": "user",
+          "tenant_key": "1ad49b5e041c5c84"
+        },
+        "updated": false
+      },
+      {
+        "chat_id": "oc_4f9dbc78e7b06a5e34a03c3646023e27",
+        "content": "是的",
+        "create_time": "2026-09-16 19:17",
+        "deleted": false,
+        "message_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_4f9dbc78e7b06a5e34a03c3646023e27\u0026position=65",
+        "message_id": "om_x100b6593e0fb40b0c273b10a0d8f533",
+        "message_position": "65",
+        "msg_type": "text",
+        "sender": {
+          "id": "ou_432ba7c971566328490babd78f416300",
+          "id_type": "open_id",
+          "name": "张浩",
+          "sender_type": "user",
+          "tenant_key": "1ad49b5e041c5c84"
+        },
+        "updated": false
+      },
+      {
+        "chat_id": "oc_4f9dbc78e7b06a5e34a03c3646023e27",
+        "content": "挑战系统软件 会再开发一个windows版。  mac mini非常适用于自己尚未搭建AI工作环境的同学。如果你自己的电脑前面已有很好的AI工作环境了，mac mini可以做其他任务用。 @马坤豪",
+        "create_time": "2026-09-16 22:36",
+        "deleted": false,
+        "mentions": [
+          {
+            "id": "ou_40276ffc1fc8371aa31aa8fdb22a5fbf",
+            "key": "@_user_1",
+            "name": "马坤豪"
+          }
+        ],
+        "message_app_link": "https://applink.feishu.cn/client/chat/open?openChatId=oc_4f9dbc78e7b06a5e34a03c3646023e27\u0026position=75",
+        "message_id": "om_x100b659ed80e30a0de7ed81238be9a2",
+        "message_position": "75",
+        "msg_type": "text",
+        "sender": {
+          "id": "ou_3edf271e94234a53a5ddbbdeccdd723c",
+          "id_type": "open_id",
+          "name": "肖福军",
+          "sender_i18n_names": {
+            "zh_cn": "肖福君"
+          },
+          "sender_type": "user",
+          "tenant_key": "1ad49b5e041c5c84"
+        },
+        "update_time": "2026-09-16 22:36",
+        "updated": true
+      }
+    ],
+    "total": 11
+  }
+}
